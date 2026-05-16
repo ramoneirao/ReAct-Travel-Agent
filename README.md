@@ -5,20 +5,22 @@ Um agente inteligente autônomo baseado na arquitetura ReAct para buscar, planej
 
 ## Estrutura do Projeto
 
+```python
 chat-bot/
-├── database/                 # Tudo relacionado aos dados
-│   ├── make_db.py            # O script que usamos para gerar as tabelas
-│   └── database.sqlite       # O arquivo de banco de dados gerado
+├── database/                 
+│   ├── make_db.py            
+│   └── database.sqlite       
 │
-├── tools/                    # Ferramentas do agente separadas por contexto
+├── tools/                    
 │   ├── __init__.py           
-│   ├── voos.py               # buscar_voos, reservar_voo
-│   ├── hoteis.py             # buscar_hoteis, reservar_hotel
-│   └── orcamento.py          # calcular_orcamento
+│   ├── voos.py               
+│   ├── hoteis.py             
+│   └── orcamento.py          
 │
-├── core/                     # O cérebro do seu bot
+├── core/                     
 │   ├── __init__.py
-│   ├── agent.py              # Inicializa o LLM, puxa as tools e cria o Agente ReAct
-│   └── prompts.py            # Guarda os System Prompts 
+│   ├── agent.py              
+│   └── prompts.py            
 │
-└── main.py                   # Ponto de entrada do programa
+└── main.py                   
+```
